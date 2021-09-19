@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -43,8 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/best_cricketer"
-        android:textSize="20sp"
         android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,9 +65,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/answerPlaceHolderTV1"
         app:layout_constraintStart_toEndOf="@+id/answerPlaceHolderTV1"
         app:layout_constraintTop_toTopOf="@+id/answerPlaceHolderTV1"
@@ -79,8 +78,8 @@
         android:layout_width="378dp"
         android:layout_height="49dp"
         android:layout_marginTop="28dp"
-        android:textColor="@color/black"
         android:text="@string/what_are_the_colors_in_the_indian_national_flag"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/bestCricketerQuestionTV"
         app:layout_constraintTop_toBottomOf="@+id/bestCricketerAnswerTV" />
@@ -103,13 +102,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
-        android:textSize="16sp"
         android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/answerPlaceHolderTV2"
         app:layout_constraintStart_toEndOf="@+id/answerPlaceHolderTV2"
         app:layout_constraintTop_toTopOf="@+id/answerPlaceHolderTV2"
         app:layout_constraintVertical_bias="0.125"
-        android:textStyle="bold"
         tools:text="White, Green, Orange" />
 
     <TextView
@@ -125,21 +124,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.228"
-        tools:text="Game : 1" />
+        tools:text="Game 1 : " />
 
     <TextView
         android:id="@+id/dateAndTimeTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/gameNumberTV"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toEndOf="@+id/gameNumberTV"
         app:layout_constraintTop_toTopOf="@+id/gameNumberTV"
-        app:layout_constraintVertical_bias="0.0"
         tools:text="23rd Sep 2:00 pm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

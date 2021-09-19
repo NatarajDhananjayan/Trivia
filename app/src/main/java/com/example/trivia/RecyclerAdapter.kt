@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-//Recylcer Adapter class to help us show a list a user played Trivias
+//Recycler Adapter class to help us show a list a user played Trivias
 //in a recycler View
 
 class RecyclerAdapter(

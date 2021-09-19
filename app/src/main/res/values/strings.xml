@@ -19,5 +19,5 @@
     <string name="history">History</string>
     <string name="hello_user">Hello %s!</string>
     <string name="name">Name :</string>
-    <string name="game">Game : %d</string>
+    <string name="game">Game %d :</string>
 </resources>
