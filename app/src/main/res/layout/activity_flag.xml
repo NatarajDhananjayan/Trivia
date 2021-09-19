@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlagActivity"
+   >
+
+    <TextView
+        android:id="@+id/flagTextView"
+        android:layout_width="339dp"
+        android:layout_height="78dp"
+        android:text="@string/what_are_the_colors_in_the_indian_national_flag"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/whiteColorCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/flagTextView"
+        app:layout_constraintTop_toBottomOf="@+id/flagTextView"
+        android:text="@string/a_white"
+        android:textSize="18sp"/>
+
+    <CheckBox
+        android:id="@+id/yellowColorCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/whiteColorCB"
+        app:layout_constraintTop_toBottomOf="@+id/whiteColorCB"
+        android:text="@string/b_yellow"
+        android:textSize="18sp"/>
+
+    <CheckBox
+        android:id="@+id/orangeColorCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/yellowColorCB"
+        app:layout_constraintTop_toBottomOf="@+id/yellowColorCB"
+        android:text="@string/c_orange"
+        android:textSize="18sp"/>
+
+    <CheckBox
+        android:id="@+id/greenColorCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/orangeColorCB"
+        app:layout_constraintTop_toBottomOf="@+id/orangeColorCB"
+        android:text="@string/d_green"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/nextSummaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greenColorCB"
+        app:layout_constraintVertical_bias="0.083" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

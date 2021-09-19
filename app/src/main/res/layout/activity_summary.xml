@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryActivity"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/greetingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        tools:text="Hello Dhananjayan!" />
+
+    <TextView
+        android:id="@+id/selectedAnswersTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/here_are_the_answers_you_have_selected"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetingTextView"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/bestCricketerQuestionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="@string/best_cricketer"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/selectedAnswersTV"
+        app:layout_constraintTop_toBottomOf="@+id/selectedAnswersTV" />
+
+    <TextView
+        android:id="@+id/answerPlaceHolderTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/answer"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/bestCricketerQuestionTV"
+        app:layout_constraintTop_toBottomOf="@+id/bestCricketerQuestionTV" />
+
+    <TextView
+        android:id="@+id/bestCricketerAnswerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/answerPlaceHolderTV1"
+        app:layout_constraintStart_toEndOf="@+id/answerPlaceHolderTV1"
+        app:layout_constraintTop_toTopOf="@+id/answerPlaceHolderTV1"
+        tools:text="Sachin Tendulkar" />
+
+    <TextView
+        android:id="@+id/colorsQuestionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/what_are_the_colors_in_the_indian_national_flag"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/bestCricketerQuestionTV"
+        app:layout_constraintTop_toBottomOf="@+id/bestCricketerAnswerTV" />
+
+    <TextView
+        android:id="@+id/answerPlaceHolderTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/answer"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/colorsQuestionTV"
+        app:layout_constraintTop_toBottomOf="@+id/colorsQuestionTV" />
+
+    <TextView
+        android:id="@+id/colorsAnswerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/answerPlaceHolderTV2"
+        app:layout_constraintStart_toEndOf="@+id/answerPlaceHolderTV2"
+        app:layout_constraintTop_toTopOf="@+id/answerPlaceHolderTV2"
+        tools:text="White, Green, Orange" />
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/finish"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/colorsAnswerTV"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="@+id/answerPlaceHolderTV2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:text="@string/history"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFinish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonFinish"
+        app:layout_constraintTop_toTopOf="@+id/buttonFinish"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

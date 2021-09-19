@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_default_radius"
+    android:background="#CDDC39">
+
+    <TextView
+        android:id="@+id/namePlaceHolderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <TextView
+        android:id="@+id/userNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/namePlaceHolderTV"
+        app:layout_constraintStart_toEndOf="@+id/namePlaceHolderTV"
+        app:layout_constraintTop_toTopOf="@+id/namePlaceHolderTV"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Dhananjayan" />
+
+    <TextView
+        android:id="@+id/bestCricketerQuestionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/best_cricketer"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namePlaceHolderTV" />
+
+    <TextView
+        android:id="@+id/answerPlaceHolderTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/answer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/bestCricketerQuestionTV"
+        app:layout_constraintTop_toBottomOf="@+id/bestCricketerQuestionTV" />
+
+    <TextView
+        android:id="@+id/bestCricketerAnswerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/answerPlaceHolderTV1"
+        app:layout_constraintStart_toEndOf="@+id/answerPlaceHolderTV1"
+        app:layout_constraintTop_toTopOf="@+id/answerPlaceHolderTV1"
+        tools:text="Sachin Tendulkar" />
+
+    <TextView
+        android:id="@+id/colorsQuestionTV"
+        android:layout_width="378dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/black"
+        android:text="@string/what_are_the_colors_in_the_indian_national_flag"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/bestCricketerQuestionTV"
+        app:layout_constraintTop_toBottomOf="@+id/bestCricketerAnswerTV" />
+
+    <TextView
+        android:id="@+id/answerPlaceHolderTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/answer"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/colorsQuestionTV"
+        app:layout_constraintTop_toBottomOf="@+id/colorsQuestionTV" />
+
+    <TextView
+        android:id="@+id/colorsAnswerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/answerPlaceHolderTV2"
+        app:layout_constraintStart_toEndOf="@+id/answerPlaceHolderTV2"
+        app:layout_constraintTop_toTopOf="@+id/answerPlaceHolderTV2"
+        app:layout_constraintVertical_bias="0.125"
+        android:textStyle="bold"
+        tools:text="White, Green, Orange" />
+
+    <TextView
+        android:id="@+id/gameNumberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/namePlaceHolderTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228"
+        tools:text="Game : 1" />
+
+    <TextView
+        android:id="@+id/dateAndTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gameNumberTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toEndOf="@+id/gameNumberTV"
+        app:layout_constraintTop_toTopOf="@+id/gameNumberTV"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="23rd Sep 2:00 pm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
